@@ -1,6 +1,6 @@
 # Landing Page Redesign
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://acdyon-assignment-alpha.vercel.app/)
+**Live Link:** https://acdyon-assignment-alpha.vercel.app/
 
 A highly optimized, visually striking landing page built with React and Vite. Designed specifically for a high-stakes Product Hunt launch, this project prioritizes a "wow" reaction in the first 3 seconds through premium aesthetics, zero-latency loading, and delightful micro-interactions.
 
