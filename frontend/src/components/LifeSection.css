@@ -1,0 +1,97 @@
+/* Life Section */
+.life-section {
+  padding: 96px var(--container-padding);
+}
+
+.life-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.life-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.life-heading {
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-on-surface);
+  margin-bottom: 16px;
+}
+
+.life-subtext {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+}
+
+.life-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.life-card {
+  padding: 40px 32px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.life-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.life-card-icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface-container-high);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.life-card-icon {
+  font-size: 32px !important;
+}
+
+.life-card-icon-green { color: var(--color-primary-container); }
+.life-card-icon-yellow { color: var(--color-secondary-container); }
+.life-card-icon-blue { color: var(--color-tertiary-container); }
+
+.life-card-title {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-on-surface);
+  margin-bottom: 12px;
+}
+
+.life-card-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-on-surface-variant);
+}
+
+@media (max-width: 768px) {
+  .life-cards { grid-template-columns: 1fr; }
+  .life-heading { font-size: 32px; }
+  .life-section { padding: 72px var(--container-padding); }
+}
+
+@media (max-width: 480px) {
+  .life-heading { font-size: 26px; }
+  .life-card { padding: 32px 24px; }
+}

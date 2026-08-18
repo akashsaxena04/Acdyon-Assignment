@@ -1,0 +1,109 @@
+/* Final CTA Section */
+.final-cta {
+  padding: 96px var(--container-padding);
+}
+
+.final-cta-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.final-cta-card {
+  border-radius: var(--radius-xl);
+  padding: 72px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(88,204,2,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(88,204,2,0.10) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.final-cta-card::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(74,189,255,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.final-cta-owl {
+  font-size: 72px;
+  line-height: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+.final-cta-heading {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--color-on-surface);
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-heading span {
+  color: var(--color-primary-container);
+}
+
+.final-cta-subtext {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+  max-width: 460px;
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-btn {
+  font-size: 17px;
+  padding: 18px 48px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 32px rgba(88,204,2,0.25);
+}
+
+.final-cta-btn:hover {
+  box-shadow: 0 12px 40px rgba(88,204,2,0.35);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.final-cta-note {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .final-cta-card { padding: 48px 32px; }
+  .final-cta-heading { font-size: 36px; }
+}
+
+@media (max-width: 480px) {
+  .final-cta { padding: 72px var(--container-padding); }
+  .final-cta-card { padding: 40px 24px; border-radius: var(--radius-lg); }
+  .final-cta-heading { font-size: 28px; }
+  .final-cta-btn { font-size: 15px; padding: 16px 32px; width: 100%; }
+}

@@ -1,0 +1,121 @@
+/* Language Explorer */
+.language-explorer {
+  padding: 96px var(--container-padding);
+}
+
+.language-explorer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.language-explorer-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.language-explorer-heading {
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-on-surface);
+  margin-bottom: 12px;
+}
+
+.language-explorer-subtext {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.language-card {
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.language-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+}
+
+.language-card:hover::before {
+  opacity: 1;
+}
+
+.language-card-flag {
+  font-size: 40px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.language-card-info {
+  flex: 1;
+}
+
+.language-card-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-on-surface);
+  margin-bottom: 4px;
+}
+
+.language-card-greeting {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--color-primary);
+  letter-spacing: -0.01em;
+}
+
+.language-card-learners {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+  margin-top: 4px;
+}
+
+.language-card-arrow {
+  font-size: 20px;
+  color: var(--color-primary-container);
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.language-card:hover .language-card-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .language-grid { grid-template-columns: repeat(2, 1fr); }
+  .language-explorer-heading { font-size: 32px; }
+}
+
+@media (max-width: 540px) {
+  .language-grid { grid-template-columns: 1fr; }
+  .language-explorer-heading { font-size: 26px; }
+  .language-explorer { padding: 72px var(--container-padding); }
+}

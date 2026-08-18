@@ -1,0 +1,206 @@
+/* Streak Section */
+.streak-section {
+  padding: 96px var(--container-padding);
+  background: linear-gradient(180deg, transparent 0%, rgba(254, 199, 0, 0.04) 50%, transparent 100%);
+}
+
+.streak-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.streak-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.streak-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.streak-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(254, 199, 0, 0.15);
+  border: 1px solid rgba(254, 199, 0, 0.3);
+  border-radius: var(--radius-full);
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  width: fit-content;
+}
+
+.streak-heading {
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-on-surface);
+}
+
+.streak-subtext {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* Streak Card */
+.streak-card {
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.streak-main-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.streak-fire-icon {
+  font-size: 64px;
+  line-height: 1;
+  animation: fireGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes fireGlow {
+  from { filter: drop-shadow(0 0 8px rgba(254,199,0,0.4)); }
+  to   { filter: drop-shadow(0 0 20px rgba(254,199,0,0.8)); }
+}
+
+.streak-count {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--color-secondary-container);
+  line-height: 1;
+}
+
+.streak-label {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+
+/* Weekly Calendar */
+.streak-calendar {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.streak-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.streak-day-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+
+.streak-day-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  transition: transform 0.2s;
+}
+
+.streak-day-circle:hover { transform: scale(1.1); }
+
+.streak-day-circle.done {
+  background: var(--color-secondary-container);
+  color: white;
+}
+
+.streak-day-circle.today {
+  background: var(--color-surface-container-high);
+  border: 2px dashed var(--color-secondary-container);
+  color: var(--color-secondary);
+  font-size: 20px;
+}
+
+.streak-day-circle.inactive {
+  background: var(--color-surface-container);
+  color: var(--color-outline);
+}
+
+/* Goal row */
+.streak-goal-row {
+  display: flex;
+  gap: 12px;
+}
+
+.streak-goal-card {
+  flex: 1;
+  background: var(--color-surface-container-low);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--color-outline-variant);
+}
+
+.streak-goal-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+
+.streak-goal-value {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--color-on-surface);
+}
+
+.streak-keep-btn {
+  width: 100%;
+  font-size: 15px;
+  padding: 14px;
+}
+
+@media (max-width: 900px) {
+  .streak-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .streak-heading { font-size: 32px; }
+  .streak-card { max-width: 480px; margin: 0 auto; width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .streak-section { padding: 72px var(--container-padding); }
+  .streak-heading { font-size: 26px; }
+  .streak-day-circle { width: 34px; height: 34px; font-size: 14px; }
+  .streak-count { font-size: 40px; }
+}
