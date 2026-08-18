@@ -1,4 +1,5 @@
 Landing Page Redesign
+
 Live Link: https://acdyon-assignment-alpha.vercel.app/
 
 A highly optimized, visually striking landing page built with React and Vite. Designed specifically for a high-stakes Product Hunt launch, this project prioritizes a "wow" reaction in the first 3 seconds through premium aesthetics, zero-latency loading, and delightful micro-interactions.
