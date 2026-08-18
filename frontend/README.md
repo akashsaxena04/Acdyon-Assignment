@@ -10,7 +10,7 @@ A highly optimized, visually striking landing page built with React and Vite. De
 * **Premium Aesthetics:** Features sleek glassmorphism effects and fully responsive, meticulously tested breakpoints (down to 390px mobile view).
 * **Engaging Micro-Interactions:** Includes custom dynamic counting numbers and a polished, static UI modal for the "Log In / Sign Up" flow.
 * **Audio Feedback:** Utilizes the Web Audio API for satisfying button "ding" sound effects.
-* **Easter Egg:** Try entering the Konami Code for a hidden surprise!
+* **Easter Egg:** Try entering the Konami Code (`Up Up Down Down Left Right Left Right B A`) on your keyboard for a hidden surprise!
 
 ## 🛠️ Tech Stack
 

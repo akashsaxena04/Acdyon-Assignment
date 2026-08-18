@@ -12,5 +12,5 @@
 **AI Usage:** I used AI (specifically an agentic coding assistant) to rapid-prototype the React component structure, generate the base CSS styling (like the glassmorphism effects), and write the Web Audio API boilerplate for the button "ding" sound effect.
 **Personal Verification & Changes:** 
 - I didn't blindly accept the generated CSS, I personally verified the responsive breakpoints to ensure the layout didn't break on a 390px mobile view and had no horizontal scrolling. 
-- I actively rejected generic animations and specifically requested custom micro-interactions (like the counting numbers and the Konami Code Easter Egg). 
+- I actively rejected generic animations and specifically requested custom micro-interactions (like the counting numbers and the Konami Code Easter Egg, accessible by typing `Up Up Down Down Left Right Left Right B A` on the keyboard). 
 - I manually tested the UI interactions (like the modal opening/closing and the sound triggering) to ensure they felt snappy and polished, rather than just trusting the code output.
